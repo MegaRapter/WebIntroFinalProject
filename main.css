@@ -1,0 +1,99 @@
+/* The following @ statement is importing the font Roboto. */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap');
+/* The following @ statement is importing the font Lato.*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+
+:root {
+    --lightGrey: #f4f4f4;
+    --darkerGrey: #eee;
+    --pageLength: 60rem;
+}
+body {
+    background: var(--lightGrey);
+    font-family: Lato;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.blue {
+    color: #9cf;
+    cursor: pointer;
+    margin-left: 0.4rem;
+}
+.flexContainer {
+    display: flex;
+}
+
+header {
+    background-color: #fff;
+    position: fixed;
+    width: var(--pageLength);
+    margin: 0;
+    padding: 0 1rem;
+}
+h1 {
+    font-weight: 400;
+    font-family: Roboto;
+}
+
+#commentSection {
+    background: var(--darkerGrey);
+    width: calc(var(--pageLength) + 2rem);
+    min-height: 50rem;
+    padding: 9.5rem 0 3.5rem 0;
+
+}
+.post {
+    background: var(--lightGrey);
+    min-height: 3rem;
+    margin: 1.25rem;
+    padding: 1.25rem;
+}
+.postInnerContainer {
+    margin-left: 4rem;
+}
+.postTopRow {
+    display: flex;
+    justify-content: space-between;
+}
+.commentDisplay {
+    font-size: 1.75rem;
+    font-weight: 400;
+    font-family: Roboto;
+}
+#editContainer {
+    margin-top: 0.25rem;
+}
+#editContainer span {
+    width: 3rem;
+}
+
+form {
+    background: #fff;
+    position: fixed;
+    width: var(--pageLength);
+    padding: 1rem 1rem;
+    bottom: 0;
+}
+input {
+    padding: 0.2rem;
+    margin-right: 0.5rem;
+}
+#displayName {
+    width: 6rem;
+}
+#commentInput, #reviseComment {
+    flex-grow: 1;
+}
+#submitComment {
+    background: #ffff;
+    border: #ffff;
+}
+img {
+    float: left;
+    height: 3rem;
+    width: 3rem;
+}
